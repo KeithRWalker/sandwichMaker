@@ -4,7 +4,7 @@ const meatInfo = {
     chicken: 4.00,
     beef: 4.00,
     steak: 5.00,
-    noMeat: 0
+    none: 0
 };
 
 const getMeat = () => {
