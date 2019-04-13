@@ -1,5 +1,7 @@
+import store from './components/store.js';
+
 const init = () => {
-    console.log('main.js Linked!')
+    store.makeIngList();
 };
 
 init();
