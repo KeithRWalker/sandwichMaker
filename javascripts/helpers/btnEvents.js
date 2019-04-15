@@ -1,9 +1,8 @@
-import importBread from './bread.js';
-import importCheese from './cheese.js';
-import importCondiment from './condiment.js';
-import importMeat from './meat.js';
-import importVeggie from './veggie.js';
-import importUtil from './util.js';
+import importBread from '../ingredients/bread.js';
+import importCheese from '../ingredients/cheese.js';
+import importCondiment from '../ingredients/condiment.js';
+import importMeat from '../ingredients/meat.js';
+import importVeggie from '../ingredients/veggie.js';
 import util from './util.js';
 
 const getBread = importBread.getBread();

@@ -1,9 +1,9 @@
 import importUtil from '../helpers/util.js';
-import importBread from '../helpers/bread.js';
-import importCheese from '../helpers/cheese.js';
-import importCondiment from '../helpers/condiment.js';
-import importMeat from '../helpers/meat.js';
-import importVeggie from '../helpers/veggie.js';
+import importBread from '../ingredients/bread.js';
+import importCheese from '../ingredients/cheese.js';
+import importCondiment from '../ingredients/condiment.js';
+import importMeat from '../ingredients/meat.js';
+import importVeggie from '../ingredients/veggie.js';
 
 const makeIngList = () => {
     const getBread = importBread.getBread();
