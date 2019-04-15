@@ -11,14 +11,18 @@ const makeIngList = () => {
     const getCondiment = importCondiment.getCondiment();
     const getMeat = importMeat.getMeat();
     const getVeggie = importVeggie.getVeggie();
-    let ingString = ``;
-    let prop='';
-    let val='';
-    
 
-    for(let i in getBread){
-        ingString += `<li>${i}: ${getBread[i]}$</li>`;
-    };
+    const printBread = importUtil.objLoop(getBread)
+    const printCheese = importUtil.objLoop(getCheese)
+    const printCondiment = importUtil.objLoop(getCondiment)
+    const printMeat = importUtil.objLoop(getMeat)
+    const printVeggie = importUtil.objLoop(getVeggie)
+    
+    let ingString = `<div class="ingCard card"><ul class="breadList ings" id="breadList">${printBread}</ul></div>`;
+        ingString += `<div class="ingCard card"><ul class="meatList ings" id="meatList">${printMeat}</ul></div>`
+        ingString += `<div class="ingCard card"><ul class="cheeseList ings" id="cheeseList">${printCheese}</ul></div>`
+        ingString += `<div class="ingCard card"><ul class="veggieList ings" id="veggieList">${printVeggie}</ul></div>`
+        ingString += `<div class="ingCard card"><ul class="condimentList ings" id="condimentList">${printCondiment}</ul></div>`
     importUtil.printToDom('ingListCon', ingString);
 };
 

@@ -2,3 +2,21 @@ body{
     background-color: black;
     color: aliceblue;
 }
+.card{
+    background-color: rgb(44, 44, 44);
+    color: aliceblue;
+    display: flex;
+    flex-flow: column wrap;
+    width: 50%;
+    margin: 10px;
+    border: 2px solid blue;
+}
+.ingListCon{
+    display: flex;
+    align-content: space-between;
+    border: 2px dashed green;
+}
+
+.ingLi{
+    list-style-type: none;
+}

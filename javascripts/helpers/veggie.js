@@ -1,11 +1,11 @@
 const veggieInfo = {
-    lettuce: 0.50,
-    tomatoes: 0.50,
-    spinach: 0.75,
-    peppers: 0.75,
-    pickles: 0.75,
-    onions: 0.50,
-    none: 0
+    Lettuce: 0.50,
+    Tomatoes: 0.50,
+    Spinach: 0.75,
+    Peppers: 0.75,
+    Pickles: 0.75,
+    Onions: 0.50,
+    None: 0
 };
 
 const getVeggie = () => {
