@@ -17,7 +17,6 @@ const makeIngList = () => {
     const printCondiment = importUtil.objLoop(getCondiment)
     const printMeat = importUtil.objLoop(getMeat)
     const printVeggie = importUtil.objLoop(getVeggie)
-    
     let ingString = `<div class="ingCard card"><ul class="breadList ings" id="breadList">${printBread}</ul></div>`;
         ingString += `<div class="ingCard card"><ul class="meatList ings" id="meatList">${printMeat}</ul></div>`
         ingString += `<div class="ingCard card"><ul class="cheeseList ings" id="cheeseList">${printCheese}</ul></div>`
