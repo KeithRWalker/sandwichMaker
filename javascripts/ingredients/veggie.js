@@ -5,7 +5,7 @@ const veggieInfo = {
     Peppers: 0.75,
     Pickles: 0.75,
     Onions: 0.50,
-    None: 0
+    NoVeggies: 0
 };
 
 const getVeggie = () => {

@@ -3,7 +3,7 @@ const cheeseInfo = {
     Swiss: 1.00,
     Mozzarella: 1.00,
     Cheddar: 1.00,
-    None: 0
+    NoChhese: 0
 };
 
 const getCheese = () => {
