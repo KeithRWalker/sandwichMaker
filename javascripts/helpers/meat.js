@@ -1,10 +1,10 @@
 const meatInfo = {
-    turkey: 3.00,
-    ham: 3.00,
-    chicken: 4.00,
-    beef: 4.00,
-    steak: 5.00,
-    none: 0
+    Turkey: 3.00,
+    Ham: 3.00,
+    Chicken: 4.00,
+    Beef: 4.00,
+    Steak: 5.00,
+    None: 0
 };
 
 const getMeat = () => {

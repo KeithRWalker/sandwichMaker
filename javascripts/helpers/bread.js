@@ -1,9 +1,9 @@
 const breadInfo = {
-    white: 2.00,
-    wheat: 2.00,
-    sourdough: 2.50,
-    rye: 2.50,
-    none: 0
+    White: 2.00,
+    Wheat: 2.00,
+    Sourdough: 2.50,
+    Rye: 2.50,
+    None: 0
 };
 
 const getBread = () => {

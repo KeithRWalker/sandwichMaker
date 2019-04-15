@@ -1,9 +1,9 @@
 const condimentInfo = {
-    ketchup: 0.25,
-    mayo: 0.25,
-    mustard: 0.25,
-    relish: 0.25,
-    none: 0
+    Ketchup: 0.25,
+    Mayo: 0.25,
+    Mustard: 0.25,
+    Relish: 0.25,
+    None: 0
 };
 const getCondiment = () => {
     return condimentInfo;
