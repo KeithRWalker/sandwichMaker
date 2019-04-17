@@ -5,24 +5,29 @@ import importMeat from '../ingredients/meat.js';
 import importVeggie from '../ingredients/veggie.js';
 import util from './util.js';
 
-const getBread = importBread.getBread();
-const getCheese = importCheese.getCheese();
+const getBread     = importBread.getBread();
+const getCheese    = importCheese.getCheese();
 const getCondiment = importCondiment.getCondiment();
-const getMeat = importMeat.getMeat();
-const getVeggie = importVeggie.getVeggie();
+const getMeat      = importMeat.getMeat();
+const getVeggie    = importVeggie.getVeggie();
+
+let addedBread     = 1;
+let addedCheese    = 1;
+let addedCondiment = 1;
+let addedMeat      = 1;
+let addedVeggie   = 1;
 
 let nameArray = [];
 let priceArray = [];
 
 const reducer = (accumulator, currentValue) => accumulator + currentValue;
 
-
 const addEvents = () => {
     const addIngBtn = document.getElementsByClassName('ingBtn');
     for(let i = 0; i<addIngBtn.length; i++){
         addIngBtn[i].addEventListener('click', addIngredients);
-    }
-}
+    };
+};
 
 const addIngredients = (e) => {
     e.preventDefault();
@@ -35,6 +40,8 @@ const addIngredients = (e) => {
             sandwichPrice += getBread[i];
             nameArray.push(sandwichString);
             priceArray.push(sandwichPrice);
+            e.target.innerHTML=`added ${addedBread}`;
+            addedBread++;
         }
     };
 
@@ -44,6 +51,8 @@ const addIngredients = (e) => {
             sandwichPrice += getCheese[i];
             nameArray.push(sandwichString);
             priceArray.push(sandwichPrice);
+            e.target.innerHTML=`added ${addedCheese}`;
+            addedCheese++;
         }
     };
 
@@ -53,6 +62,8 @@ const addIngredients = (e) => {
             sandwichPrice += getCondiment[i];
             nameArray.push(sandwichString);
             priceArray.push(sandwichPrice);
+            e.target.innerHTML=`added ${addedCondiment}`;
+            addedCondiment++;
         }
     };
 
@@ -62,6 +73,8 @@ const addIngredients = (e) => {
             sandwichPrice += getMeat[i];
             nameArray.push(sandwichString);
             priceArray.push(sandwichPrice);
+            e.target.innerHTML=`added ${addedMeat}`;
+            addedMeat++;
         }
     };
 
@@ -71,22 +84,14 @@ const addIngredients = (e) => {
             sandwichPrice += getVeggie[i];
             nameArray.push(sandwichString);
             priceArray.push(sandwichPrice);
+            e.target.innerHTML=`added ${addedVeggie}`;
+            addedVeggie++;
         }
     };
-
     let stringToPrint = ''
     let priceToPrint = priceArray.reduce(reducer);
-    stringToPrint += `<div>Ingredients: ${nameArray.join(' ')} <br> TOTAL PRICE = ${priceToPrint}$</div>`;
+    stringToPrint += `<h6>Ingredients: ${nameArray.join(' ')} <br> TOTAL PRICE = ${priceToPrint}$</h6>`;
     util.printToDom('sandwichCon', stringToPrint);
-}
+};
 
 export default { addEvents }
-
-// makeSandwichBtn.addEventListener('click', makeSandwich);
-// const makeSandwichBtn = document.getElementById('makeSandwich');
-// const makeSandwich = () => {
-//     let stringToPrint = ''
-//     let priceToPrint = priceArray.reduce(reducer);
-//     stringToPrint += `<div>Ingredients: ${nameArray} <br><br> TOTAL PRICE = ${priceToPrint}</div>`;
-//     util.printToDom('sandwichCon', stringToPrint);
-// }

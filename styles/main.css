@@ -2,21 +2,25 @@ body{
     background-color: black;
     color: aliceblue;
 }
-.card{
-    background-color: rgb(44, 44, 44);
-    color: aliceblue;
-    display: flex;
-    flex-flow: column wrap;
-    width: 50%;
-    margin: 10px;
-    border: 2px solid blue;
+.ingCard{
+    background-color: brown;
+    margin: 1%;
+}
+.sandwichCon{
+    width: 100%;
+    text-align: center;
+    border: 2px solid blanchedalmond;
 }
 .ingListCon{
     display: flex;
-    align-content: space-between;
-    border: 2px dashed green;
+    flex-flow: row wrap;
+    border: 2px solid blanchedalmond;
 }
 
 .ingLi{
     list-style-type: none;
+}
+
+.ingBtn{
+    width: 100%;
 }
